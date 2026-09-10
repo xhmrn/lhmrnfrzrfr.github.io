@@ -16,7 +16,7 @@
   <title>Ham — Software engineer, endlessly curious.</title>
   <link rel="icon" href="assets/img/favicon-ham.png?v=1" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/favicon-ham.png?v=1" />
-  <link rel="stylesheet" href="assets/css/main.css?v=backdrop2" />
+  <link rel="stylesheet" href="assets/css/main.css?v=object1" />
   <script defer src="assets/vendor/three.min.js"></script>
   <script defer src="assets/js/gravity.js?v=relativity1"></script>
   <script defer src="assets/js/space.js?v=ember4"></script>
@@ -47,11 +47,11 @@
           </div>
           <div class="hero-note"><span class="note-line" aria-hidden="true"></span> Built on curiosity. Refined through experience.</div>
         </div>
-        <div class="space-visual" role="group" aria-label="Interactive black hole">
+        <div class="space-visual" role="group" aria-label="Interactive black hole inspired by Sagittarius A*, a supermassive black hole">
           <span class="space-notice" hidden>Live animation needs WebGL enabled in your browser.</span>
           <noscript><span class="space-notice">Enable JavaScript to see the live animation.</span></noscript>
           <canvas id="space-canvas" tabindex="-1" role="group" aria-label="Black hole orbit control" aria-describedby="orbit-help"></canvas>
-          <div class="visual-topline" aria-hidden="true"><span>FIG. 001</span><span>AN ENDLESS CURIOSITY</span></div>
+          <div class="visual-topline" aria-hidden="true"><span>FIG. 001</span><span class="object-label"><span>SAGITTARIUS A*</span><span class="object-class">SUPERMASSIVE BLACK HOLE</span></span></div>
           <div class="visual-cross cross-top" aria-hidden="true">+</div>
           <div class="visual-cross cross-bottom" aria-hidden="true">+</div>
           <div class="visual-caption" id="orbit-help"><span class="tiny-dot" aria-hidden="true"></span> Drag to orbit · Arrow keys to rotate<span class="sr-only">. Press Home to reset the view. On touchscreens, drag within the animation; scroll outside it to move the page.</span></div>
@@ -74,10 +74,12 @@
         <p class="simulation-note">Non-rotating black hole · Relativistic test-particle motion · Distant-observer clock</p>
         <details class="physics-details">
           <summary>What this simulation represents</summary>
+          <p>Inspired by Sagittarius A*, the supermassive black hole at the center of the Milky Way, with a mass of about four million Suns. This is an idealized non-rotating model, not a reconstruction of its observed appearance. The simulation uses dimensionless horizon units; its playback is not calibrated to Sagittarius A*.</p>
           <p>Distances are in horizon radii (Rₛ); local speed is a fraction of light speed (c). The horizon is at 1 Rₛ, the photon sphere at 1.5 Rₛ, and the innermost stable circular orbit at 3 Rₛ. Playback advances 12 Rₛ/c per second.</p>
           <p>The marker represents a particle with negligible size and mass; its visible size is exaggerated. Its orbit follows the Schwarzschild geodesic equations. It fades near the horizon in distant-observer time, while the falling particle would cross in finite proper time.</p>
           <p>This is a numerical snapshot visualization. Photon travel-time delays, black-hole spin, gas drag, tidal disruption of extended bodies, and full fluid dynamics are not modeled. Orange gas colors and turbulence are illustrative.</p>
           <a href="https://science.nasa.gov/universe/black-holes/anatomy/" target="_blank" rel="noopener noreferrer">Black hole anatomy — NASA ↗</a>
+          <br /><a href="https://science.nasa.gov/universe/black-holes/types/" target="_blank" rel="noopener noreferrer">Sagittarius A* and black hole types — NASA ↗</a>
         </details>
       </div>
       <div class="chapter-bar" aria-hidden="true"><span>CURIOUS MIND. ENGINEER AT HEART.</span><span>SCROLL TO DISCOVER <span class="down-arrow">↓</span></span></div>
