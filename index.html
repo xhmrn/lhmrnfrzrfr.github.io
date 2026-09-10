@@ -16,7 +16,7 @@
   <title>Ham — Software engineer, endlessly curious.</title>
   <link rel="icon" href="assets/img/favicon-ham.png?v=1" type="image/png" />
   <link rel="apple-touch-icon" href="assets/img/favicon-ham.png?v=1" />
-  <link rel="stylesheet" href="assets/css/main.css?v=object1" />
+  <link rel="stylesheet" href="assets/css/main.css?v=object2" />
   <script defer src="assets/vendor/three.min.js"></script>
   <script defer src="assets/js/gravity.js?v=relativity1"></script>
   <script defer src="assets/js/space.js?v=ember4"></script>
@@ -60,6 +60,20 @@
           <button class="orbit-reset" type="button" aria-label="Reset black hole view" hidden><span aria-hidden="true">↺</span> Reset view</button>
           <button class="motion-control" type="button" aria-pressed="false" aria-label="Pause animation" hidden><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
         </div>
+      </section>
+      <section class="object-brief" aria-labelledby="object-brief-heading">
+        <h2 id="object-brief-heading">SAGITTARIUS A* <span>OBJECT BRIEF</span></h2>
+        <dl class="object-facts">
+          <div><dt>Horizon diameter</dt><dd>≈25.4 million km<small>Calculated for a non-rotating model</small></dd></div>
+          <div><dt>Mass</dt><dd>≈4.3 million Suns<small>≈8.55 × 10<sup>36</sup> kg</small></dd></div>
+          <div><dt>Location</dt><dd>Milky Way center<small>In Sagittarius · ≈27,000 light-years away</small></dd></div>
+        </dl>
+        <div class="object-equations">
+          <div><h3>01 / Horizon size</h3><p class="object-formula" aria-label="Schwarzschild radius equals two G M divided by c squared">R<sub>s</sub> = 2GM / c<sup>2</sup></p><p>Diameter = 2R<sub>s</sub>. The visible, lensed shadow is larger than the horizon.</p></div>
+          <div><h3>02 / Light paths</h3><p class="object-formula" aria-label="Second derivative of u with respect to phi, plus u, equals three G M u squared divided by c squared">d<sup>2</sup>u/dφ<sup>2</sup> + u = 3GMu<sup>2</sup>/c<sup>2</sup></p><p>Schwarzschild light-ray equation: tracing these paths produces the gravitational lensing.</p></div>
+        </div>
+        <p class="object-legend">G: gravitational constant · M: mass · c: speed of light · u = 1/r · φ: orbital angle.</p>
+        <div class="object-sources"><span>Idealized model inspired by the real object.</span><span>Sources: <a href="https://www.eso.org/public/news/eso2119/" target="_blank" rel="noopener noreferrer">ESO</a> · <a href="https://www.jpl.nasa.gov/edu/resources/teachable-moment/telescopes-get-extraordinary-view-of-milky-ways-black-hole/" target="_blank" rel="noopener noreferrer">NASA/JPL</a> · <a href="https://doi.org/10.1155/2018/7093592" target="_blank" rel="noopener noreferrer">Equations ↗</a></span></div>
       </section>
       <div class="simulation-panel" hidden>
         <div class="simulation-heading"><span>WHAT IF SOMETHING PASSES BY?</span><span class="simulation-key"><i aria-hidden="true"></i> Follow the particle marker</span></div>

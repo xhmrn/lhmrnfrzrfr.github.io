@@ -73,6 +73,26 @@ h1 em { font-size: 1.17em; letter-spacing: -5px; }
 .motion-control:hover, .orbit-reset:hover { color: #fff; }
 .orbit-reset > span { font-size: 18px; }
 .motion-icon { width: 12px; text-align: center; }
+.object-brief { border-top: 1px solid var(--line); padding-block: 25px; }
+.object-brief > h2 { display: flex; justify-content: space-between; gap: 16px; font: 500 12px/1.6 "DM Sans", Arial, sans-serif; letter-spacing: 1.1px; color: #c5c4c0; }
+.object-brief > h2 span { color: var(--muted); font-weight: 400; }
+.object-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 23px 0; }
+.object-facts dt, .object-equations h3 { color: var(--muted); font-size: 12px; font-weight: 400; letter-spacing: .3px; margin: 0 0 8px; }
+.object-facts dd { margin: 0; font-size: clamp(17px, 1.8vw, 23px); line-height: 1.4; letter-spacing: -.4px; }
+.object-facts small { display: block; color: var(--muted); font-size: 12px; line-height: 1.7; letter-spacing: 0; margin-top: 5px; }
+.object-equations { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; border-top: 1px solid #ffffff0d; padding-top: 20px; }
+.object-equations h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.object-equations p { font-size: 12px; line-height: 1.7; color: var(--muted); margin: 8px 0 0; }
+.object-equations .object-formula { color: #d9d7d0; font-family: Georgia, serif; font-size: clamp(17px, 1.8vw, 22px); line-height: 1.8; margin: 0; }
+.object-legend { color: var(--muted); font-size: 11px; line-height: 1.8; margin: 16px 0 10px; }
+.object-sources { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; font-size: 11px; line-height: 1.8; color: var(--muted); }
+.object-sources a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 560px) {
+  .object-facts { grid-template-columns: 1fr; gap: 17px; }
+  .object-facts > div { display: grid; grid-template-columns: 105px 1fr; gap: 10px; }
+  .object-facts dt { margin-top: 4px; }
+  .object-equations { grid-template-columns: 1fr; gap: 18px; }
+}
 .simulation-panel { border-top: 1px solid var(--line); padding: 24px 0 22px; }
 .simulation-panel[hidden] { display: none; }
 .simulation-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; letter-spacing: 1px; color: var(--muted); }
